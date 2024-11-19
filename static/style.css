@@ -1,0 +1,31 @@
+body {
+    background-color: #a382cf;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #21c01b;
+}
+
+#borderimg1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(plant.jpg) 50 round;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #fdfdfd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

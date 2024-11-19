@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Táblázatos oldal</title>
 </head>
 <body>
+   <table>
+    <tr>
+        <th>Név</th>
+        <th>Típus</th>
+        <th>Tulajdonság</th>
+    </tr>
+    {% for plant in plants %}
+        <tr>
+            <td>{{ plant.name }}</td>
+            <td>{{ plant.type }}</td>
+            <td>{{ plant.feature }}</td>
+        </tr>
     
-    <a href="https://www.google.com" target="_blank">Nézd meg a növények táblázatát!</a>
+    {% endfor %}
+    </table>
+    <a href="/" target="_blank">Vissza a főoldalra</a>
 </body>
 </html>
-<table>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
